@@ -5,8 +5,9 @@
         <logo />
         <vuetify-logo />
       </div>
+      <h2 class="testhead">testtesttest</h2>
       <v-card>
-        <v-card-title class="headline">
+        <v-card-title class="test">
           Welcome to the Vuetify + Nuxt.js template
         </v-card-title>
         <v-card-text>
@@ -73,3 +74,8 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+.test
+  color red-color
+</style>
