@@ -47,7 +47,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/style-resources'
   ],
   /*
    ** Axios module configuration
@@ -58,8 +59,11 @@ export default {
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
    */
+  styleResources: {
+    stylus: '@/assets/stylus/common.styl'
+  },
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ['@/assets/stylus/common.styl'],
     theme: {
       dark: false,
       themes: {
