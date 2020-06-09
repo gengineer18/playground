@@ -63,7 +63,7 @@ export default {
     stylus: '@/assets/stylus/common.styl'
   },
   vuetify: {
-    customVariables: ['@/assets/stylus/common.styl'],
+    customVariables: ['@/assets/vuetify/variables.scss'],
     theme: {
       dark: false,
       themes: {
@@ -77,7 +77,8 @@ export default {
           success: colors.green.accent3
         }
       }
-    }
+    },
+    treeShake: true
   },
   /*
    ** Build configuration
